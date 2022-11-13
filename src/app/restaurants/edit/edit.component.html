@@ -1,0 +1,22 @@
+<div class="container">
+  <legend>Edit Restaurant</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtnom" class="form-label">Name</label>
+      <input type="text" name="nom" [(ngModel)] = "restaurantForm.nom" class="form-control" id="txtnom" />
+    </div>
+    <div class="mb-3">
+      <label for="txtadrress" class="form-label">Address</label>
+      <input type="text" name="address" [(ngModel)] = "restaurantForm.address" class="form-control" id="txtadrress" />
+    </div>
+    <div class="mb-3">
+      <label for="txtphone" class="form-label">Phone</label>
+      <input type="text" name="phone" [(ngModel)] = "restaurantForm.phone" class="form-control" id="txtphone" />
+    </div>
+    <div class="mb-3">
+      <label for="txtphoto" class="form-label">Image</label>
+      <input type="text" name="photo" [(ngModel)] = "restaurantForm.photo" class="form-control" id="txtphoto" />
+    </div>
+    <button type="button" (click)="update()" class="btn btn-primary">Update</button>
+  </form>
+</div>
