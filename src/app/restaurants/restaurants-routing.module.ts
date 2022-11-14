@@ -17,9 +17,7 @@ const routes: Routes = [
     path: 'restaurants/edit/:id',
     component: EditComponent,
   },
-  {
-    path: '',
-  }
+ 
 ];
 
 @NgModule({

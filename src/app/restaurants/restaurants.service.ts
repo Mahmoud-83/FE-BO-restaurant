@@ -24,7 +24,7 @@ export class RestaurantsService {
   update(payload: Restaurants){
     return this.http.put(`http://localhost:8080/restaurant`,payload);
   }
-  delete(id:number){
+  /*delete(id:number){
     return this.http.delete<Restaurants>(`http://localhost:8080/restaurant/${id}`);
-  }
+  }*/
 }

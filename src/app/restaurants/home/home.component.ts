@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Restaurants } from '../restaurants';
 import { RestaurantsService } from '../restaurants.service';
-declare var window:any;
+//declare var window:any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,15 +9,15 @@ declare var window:any;
 })
 export class HomeComponent implements OnInit {
   allRestaurant: Restaurants[] = [];
-  deleteModel:any;
-  idTodelete:number=0;
+  //deleteModel:any;
+  //idTodelete:number=0;
 
   constructor(private restaurantService: RestaurantsService) { }
 
   ngOnInit(): void {
-    this.deleteModel = new window.bootstrap.Modal(
-      document.getElementById('deleteModel')
-    );
+   // this.deleteModel = new window.bootstrap.Modal(
+    //  document.getElementById('deleteModel')
+    //);
     this.get();
   }
 
@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  openDeleteModal(id: number) {
+  /*openDeleteModal(id: number) {
     this.idTodelete = id;
     this.deleteModel.show();
   }
@@ -40,6 +40,6 @@ export class HomeComponent implements OnInit {
 
       },
     });
-  }
+  }*/
 
 }
